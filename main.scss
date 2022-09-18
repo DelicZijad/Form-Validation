@@ -1,0 +1,89 @@
+$bg:rgb(119, 43, 196);
+$head:rgb(155, 15, 155);
+$sub:rgb(126, 46, 206);
+$error:#ff0000;
+$txt:rgb(112, 111, 111);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+}
+body{
+    height: 100vh;
+    background-color: $bg;
+    }
+
+    main{
+        height: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    .form{
+        background-color: white;
+        padding: 1.5rem 2rem;
+            border-radius: 5px;
+            width: 20%;
+            @media screen and (max-width:420px){
+                width: 75%;
+            }
+        &--title{
+            text-align: center;
+            font-size: 2rem;
+            color:$head ;
+            text-transform: capitalize;
+        }
+        &--msg{
+            height: 15px;
+            font-size: 14px;
+            color:$error ;
+        }
+        &--middle{
+            position: relative;
+            margin-bottom: 0.1rem;
+        }
+        &--error{
+            position: absolute;
+            top: 50%;
+            right: 2%;
+            transform: translateY(-50%);
+            color: $error;
+            background-color: white; 
+        }
+          &--lbl{
+            font-size: 13px;
+            color: $txt;
+            margin-bottom: 0.3rem;
+          }
+          &--inp{
+            padding: 0.5rem;
+            width: 100%;
+            border: 1px solid rgba($color: #000000, $alpha: 0.2);
+            outline: none;
+          }
+          &--content{
+            margin-block: 2rem;
+            display: grid;
+            gap: 0.5rem;
+          }
+          &--sub{
+            width: 100%;
+            padding-block: 0.75rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            outline:none;
+            border: none;
+            background-color: $sub;
+            color: white;
+            cursor: pointer;
+            &:hover{
+                background-color: lighten($color: $sub, $amount: 4%);
+            }
+          }
+    }
+
+    .hide{
+        visibility: hidden;
+    }

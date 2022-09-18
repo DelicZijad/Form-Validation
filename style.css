@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(119, 43, 196);
+}
+
+main {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.form {
+  background-color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  width: 20%;
+}
+@media screen and (max-width: 420px) {
+  .form {
+    width: 75%;
+  }
+}
+.form--title {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(155, 15, 155);
+  text-transform: capitalize;
+}
+.form--msg {
+  height: 15px;
+  font-size: 14px;
+  color: #ff0000;
+}
+.form--middle {
+  position: relative;
+  margin-bottom: 0.1rem;
+}
+.form--error {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  color: #ff0000;
+  background-color: white;
+}
+.form--lbl {
+  font-size: 13px;
+  color: rgb(112, 111, 111);
+  margin-bottom: 0.3rem;
+}
+.form--inp {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.form--content {
+  margin-block: 2rem;
+  display: grid;
+  gap: 0.5rem;
+}
+.form--sub {
+  width: 100%;
+  padding-block: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: rgb(126, 46, 206);
+  color: white;
+  cursor: pointer;
+}
+.form--sub:hover {
+  background-color: #883dd4;
+}
+
+.hide {
+  visibility: hidden;
+}

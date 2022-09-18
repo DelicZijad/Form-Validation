@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script defer src="app.js"></script>
+</head>
+<body>
+    <main>
+        <form action="" class="form">
+            <h2 class="form--title">sign up</h2>
+            <div class="form--content">
+                <div class="form--item">
+                    <label for="username" class="form--lbl">username</label>
+                    <div class="form--middle">
+                        <input type="text" placeholder="ex. Zijad97" id="username" class="form--inp">
+
+                <i class="fas fa-exclamation-circle form--error hide"></i>
+                    </div>
+                   
+                    <small class="form--msg message"></small>
+                </div>
+                <div class="form--item">
+                    <label for="email" class="form--lbl">email</label>
+                    <div class="form--middle">
+                                            <input type="email" placeholder="your.name@gmail.com" id="email" class="form--inp">
+
+            
+            <i class="fas fa-exclamation-circle form--error hide"></i>
+                    </div>
+                    <small class="form--msg message"></small>
+                </div>
+                <div class="form--item">
+                    <label for="password" class="form--lbl">password</label>
+                    <div class="form--middle">
+                        <input type="password" placeholder="8 characters minimum" id="password" class="form--inp">
+                                <i class="fas fa-exclamation-circle form--error hide"></i>
+                    </div>
+                    
+                    <small class="form--msg message"></small>
+                </div>
+                <div class="form--item">
+                    <label for="confirmPassword" class="form--lbl">confirm password</label>
+                    <div class="form--middle">
+                        <input type="password" placeholder="repeat password" id="confirmPassword" class="form--inp">
+                                 
+                                    <i class="fas fa-exclamation-circle form--error hide"></i>
+                    </div>
+                   
+                    <small class="form--msg message"></small>
+                </div>
+            </div>
+            <input type="submit" id="submit" class="form--sub">
+        </form>
+    </main>
+</body>
+</html>
